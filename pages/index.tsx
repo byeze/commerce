@@ -58,8 +58,8 @@ export default function Home({
         ))}
       </Marquee>
       <Hero
-        headline=" Dessert dragée halvah croissant."
-        description="Cupcake ipsum dolor sit amet lemon drops pastry cotton candy. Sweet carrot cake macaroon bonbon croissant fruitcake jujubes macaroon oat cake. Soufflé bonbon caramels jelly beans. Tiramisu sweet roll cheesecake pie carrot cake. "
+        headline="Un mundo para ver"
+        description="Los anteojos son instrumentos ópticos conformados por dos lentes sujetadas por un armazón cuya finalidad es la compensación de vicios refractivos como ser la miopía, hipermetropía, presbicia y el astigmatismo regular."
       />
       <Grid layout="B" variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (

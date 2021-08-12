@@ -45,10 +45,10 @@ const CartSidebarView: FC = () => {
             <Bag className="absolute" />
           </span>
           <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-            Your cart is empty
+            Tu carrito está vacío
           </h2>
           <p className="text-accent-3 px-10 text-center pt-2">
-            Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+            Intenta agregar algo al carrito
           </p>
         </div>
       ) : error ? (
@@ -75,7 +75,7 @@ const CartSidebarView: FC = () => {
           <div className="px-4 sm:px-6 flex-1">
             <Link href="/cart">
               <Text variant="sectionHeading" onClick={handleClose}>
-                My Cart
+                Mi Carrito
               </Text>
             </Link>
             <ul className={s.lineItemsList}>
@@ -96,12 +96,12 @@ const CartSidebarView: FC = () => {
                 <span>{subTotal}</span>
               </li>
               <li className="flex justify-between py-1">
-                <span>Taxes</span>
-                <span>Calculated at checkout</span>
+                <span>Impuestos</span>
+                <span>Calculados en la compra</span>
               </li>
               <li className="flex justify-between py-1">
-                <span>Shipping</span>
-                <span className="font-bold tracking-wide">FREE</span>
+                <span>Envios</span>
+                <span className="font-bold tracking-wide">GRATIS</span>
               </li>
             </ul>
             <div className="flex justify-between border-t border-accent-2 py-3 font-bold mb-2">
@@ -111,11 +111,11 @@ const CartSidebarView: FC = () => {
             <div>
               {process.env.COMMERCE_CUSTOMCHECKOUT_ENABLED ? (
                 <Button Component="a" width="100%" onClick={goToCheckout}>
-                  Proceed to Checkout ({total})
+                  Proceder al pago ({total})
                 </Button>
               ) : (
                 <Button href="/checkout" Component="a" width="100%">
-                  Proceed to Checkout
+                  Proceder al pago
                 </Button>
               )}
             </div>

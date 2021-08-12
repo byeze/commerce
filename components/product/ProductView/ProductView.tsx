@@ -40,7 +40,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
                       className={s.img}
                       src={image.url!}
                       alt={image.alt || 'Product Image'}
-                      width={600}
+                      width={1000}
                       height={600}
                       priority={i === 0}
                       quality="85"
@@ -62,7 +62,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
         </div>
         <hr className="mt-7 border-accent-2" />
         <section className="py-12 px-6 mb-10">
-          <Text variant="sectionHeading">Related Products</Text>
+          <Text variant="sectionHeading">Otras personas tambien vieron</Text>
           <div className={s.relatedProductsGrid}>
             {relatedProducts.map((p) => (
               <div

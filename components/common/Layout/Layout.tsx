@@ -110,11 +110,11 @@ const Layout: FC<Props> = ({
         <ModalUI />
         <SidebarUI />
         <FeatureBar
-          title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
+          title="Este sitio utiliza cookies para mejorar tu experiencia de navegacion"
           hide={acceptedCookies}
           action={
             <Button className="mx-5" onClick={() => onAcceptCookies()}>
-              Accept cookies
+              Aceptar cookies
             </Button>
           }
         />

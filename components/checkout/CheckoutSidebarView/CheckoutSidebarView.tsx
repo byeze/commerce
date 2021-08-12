@@ -60,12 +60,12 @@ const CheckoutSidebarView: FC = () => {
             <span>{subTotal}</span>
           </li>
           <li className="flex justify-between py-1">
-            <span>Taxes</span>
-            <span>Calculated at checkout</span>
+            <span>Impuestos</span>
+            <span>Calculados al finalizar</span>
           </li>
           <li className="flex justify-between py-1">
-            <span>Shipping</span>
-            <span className="font-bold tracking-wide">FREE</span>
+            <span>Envio</span>
+            <span className="font-bold tracking-wide">GRATIS</span>
           </li>
         </ul>
         <div className="flex justify-between border-t border-accent-2 py-3 font-bold mb-2">
@@ -78,7 +78,7 @@ const CheckoutSidebarView: FC = () => {
                 Confirm Purchase
               </Button> */}
           <Button Component="a" width="100%" variant="ghost" disabled>
-            Continue
+            Continuar
           </Button>
         </div>
       </div>
