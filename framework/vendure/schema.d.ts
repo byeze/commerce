@@ -2337,6 +2337,7 @@ export type ProductVariant = Node & {
   featuredAsset?: Maybe<Asset>
   assets: Array<Asset>
   price: Scalars['Int']
+  priceWithTax: Scalars['Int']
   currencyCode: CurrencyCode
   priceWithTax: Scalars['Int']
   stockLevel: Scalars['String']
